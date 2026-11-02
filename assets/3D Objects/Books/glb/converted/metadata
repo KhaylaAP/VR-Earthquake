@@ -1,0 +1,97 @@
+{
+	"assetNamespace": "fab",
+	"listing":
+	{
+		"averageRating": 0,
+		"createdAt": "",
+		"description": "<p>High detailed game-ready book models. Contains PBR textures (1k and 2k), as well as Unity mask texture (RGBA -&gt; Metalness, AO, Roughness, Smoothness).</p>\n<p>Modeled in Blender, textured in Substance Painter.</p>",
+		"isAiForbidden": false,
+		"isAiGenerated": false,
+		"lastUpdatedAt": "",
+		"listingType": "3d-model",
+		"media": "https://media.fab.com/image_previews/gallery_images/6a28b624-babf-4535-a00b-1e89b4e9c282/f316a2e0-10a0-4378-b773-5aa2638427d7.jpeg",
+		"publishedAt": "2024-10-30T07:19:05.343682Z",
+		"reviewCount": 0,
+		"thumbnail": "https://media.fab.com/image_previews/gallery_images/8c8800e1-7fa4-4202-b392-c4652214eb62/034f4b2f-61c3-44dc-910f-79d06a471826.jpeg",
+		"title": "Books",
+		"uid": "87a95a89-45db-45b0-be58-38535eee77cb",
+		"updatedAt": "",
+		"user":
+		{
+			"coverImageUrl": "",
+			"profileImageUrl": "",
+			"sellerName": "DustyLv",
+			"uid": "c2dbaa68-1883-49e5-9d1e-d17199192d48"
+		},
+		"tags": [
+			{
+				"name": "Pbr",
+				"slug": "pbr",
+				"uid": "080edd3b-d10a-4f32-ace2-30f5baa480dc"
+			},
+			{
+				"name": "Book",
+				"slug": "book",
+				"uid": "21844bb3-da74-421f-821b-c1f428090fee"
+			},
+			{
+				"name": "Bookshelf",
+				"slug": "bookshelf",
+				"uid": "623c50a5-30a8-4cab-8b98-d8b8b4c517ed"
+			}
+		],
+		"category":
+		{
+			"name": "Furniture & Fixtures",
+			"path": "furniture-fixtures",
+			"slug": "furniture-fixtures",
+			"uid": "3da1d2bd-49b4-4bc5-90e5-d31dadec3bd0"
+		},
+		"assetFormats": [
+			{
+				"assetFormatType":
+				{
+					"name": "FBX",
+					"groupName": "3D Exchange Formats",
+					"code": "fbx",
+					"icon": "cube",
+					"extensions": [
+						"fbx"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "Converted Files",
+					"groupName": "",
+					"code": "converted-files",
+					"icon": "cube",
+					"extensions": [
+						"gltf",
+						"glb",
+						"usdz"
+					]
+				}
+			}
+		],
+		"_PluginMetas":
+		{
+			"apiDataVersion": "0.0.1",
+			"entitlementUid": "23907523-6c49-4bbf-a460-cd7a6a8ba096",
+			"cacheSize": 0,
+			"downloaded": []
+		}
+	},
+	"target": "diskExport",
+	"quality": "",
+	"format": "glb",
+	"fileId": "791bedac-19fa-4768-b45b-e5a87e185964",
+	"platformIncluded": "",
+	"distributionPointBaseUrls": [],
+	"distributionMethod": "",
+	"entitlementUid": "23907523-6c49-4bbf-a460-cd7a6a8ba096",
+	"invertedNormal": false,
+	"isConverted": true,
+	"isQuixel": false
+}

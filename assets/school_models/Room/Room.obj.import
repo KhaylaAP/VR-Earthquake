@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://hyx2gxksodgj"
+path="res://.godot/imported/Room.obj-8e7b11ed0cfb32640f4caae0d8cf2b66.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Room.obj-8e7b11ed0cfb32640f4caae0d8cf2b66.mesh"]
+
+source_file="res://assets/school_models/Room/Room.obj"
+dest_files=["res://.godot/imported/Room.obj-8e7b11ed0cfb32640f4caae0d8cf2b66.mesh", "res://.godot/imported/Room.obj-8e7b11ed0cfb32640f4caae0d8cf2b66.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

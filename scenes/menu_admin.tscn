@@ -1,0 +1,135 @@
+[gd_scene format=3 uid="uid://duqf63fn7qu5d"]
+
+[ext_resource type="Script" uid="uid://doas0661h8534" path="res://scenes/menu_admin.gd" id="1_jng56"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iyyii"]
+bg_color = Color(0, 0, 0, 0.6862745)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="LabelSettings" id="LabelSettings_jng56"]
+outline_size = 6
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_iyyii"]
+font_size = 20
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dlswk"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_rxch8"]
+font_size = 70
+outline_size = 20
+outline_color = Color(0, 0, 0, 1)
+
+[node name="AdminMenu" type="Control" unique_id=1607977936]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jng56")
+
+[node name="Panel" type="Panel" parent="." unique_id=64730529]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_iyyii")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1215275663]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -239.75
+offset_top = -54.0
+offset_right = 239.75
+offset_bottom = 144.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 50
+
+[node name="HSlider" type="HSlider" parent="VBoxContainer" unique_id=1595139215]
+modulate = Color(1, 1, 0, 1)
+layout_mode = 2
+size_flags_vertical = 3
+min_value = 1.0
+max_value = 9.0
+step = 0.1
+value = 1.0
+tick_count = 9
+ticks_on_borders = true
+ticks_position = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/HSlider" unique_id=2107368697]
+layout_mode = 0
+offset_left = -4.0
+offset_top = -36.0
+offset_right = 467.0
+offset_bottom = -13.0
+text = "1.0        2.0         3.0        4.0         5.0        6.0         7.0        8.0         9.0"
+label_settings = SubResource("LabelSettings_jng56")
+
+[node name="SliderValue" type="Label" parent="VBoxContainer/HSlider" unique_id=1325119119]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -8.5
+offset_top = -42.0
+offset_right = 8.5
+grow_horizontal = 2
+grow_vertical = 0
+text = "1.0"
+label_settings = SubResource("LabelSettings_iyyii")
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="ConfirmButton" type="Button" parent="VBoxContainer" unique_id=1982881096]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 1, 0, 1)
+theme_override_colors/font_hover_color = Color(0.5074521, 0.5604651, 0.64990616, 1)
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_dlswk")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_dlswk")
+theme_override_styles/hover = SubResource("StyleBoxFlat_dlswk")
+text = "Confirm"
+
+[node name="Label" type="Label" parent="." unique_id=1049427384]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -166.5
+offset_top = -235.5
+offset_right = 166.5
+offset_bottom = -147.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 64
+text = "Intensity"
+label_settings = SubResource("LabelSettings_rxch8")
+horizontal_alignment = 1
+
+[connection signal="value_changed" from="VBoxContainer/HSlider" to="." method="_on_h_slider_value_changed"]
+[connection signal="pressed" from="VBoxContainer/ConfirmButton" to="." method="_on_confirm_button_pressed"]

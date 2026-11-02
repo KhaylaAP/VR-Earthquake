@@ -1,0 +1,97 @@
+{
+	"assetNamespace": "fab",
+	"listing":
+	{
+		"averageRating": 0,
+		"createdAt": "",
+		"description": "<p>whiteboard for general use, the board section can be rotated.</p>",
+		"isAiForbidden": false,
+		"isAiGenerated": false,
+		"lastUpdatedAt": "",
+		"listingType": "3d-model",
+		"media": "https://media.fab.com/image_previews/gallery_images/d6554cea-51ab-4210-ba1f-64e936000dc3/199f5474-ecdf-4f7e-9945-51b8e42deb86.jpeg",
+		"publishedAt": "2024-10-22T20:24:22.943772Z",
+		"reviewCount": 0,
+		"thumbnail": "https://media.fab.com/image_previews/gallery_images/215e0713-1972-408b-980f-c0f2087eb19d/90148f8e-f9a6-4a36-a3b3-b1ce77f52268.jpeg",
+		"title": "Whiteboard",
+		"uid": "398f36d0-bd12-4d93-b348-0f02f1677eae",
+		"updatedAt": "",
+		"user":
+		{
+			"coverImageUrl": "https://cdn1.epicgames.com/fab/seller/o-8zrd232zrpeby3m7szptvwthwrjy7t/backgroundImage/blob-1920x540-da8db402c3c1888e3731b7cec490a340.jpg",
+			"profileImageUrl": "https://cdn1.epicgames.com/fab/seller/o-8zrd232zrpeby3m7szptvwthwrjy7t/profileImage/blob-500x500-db4428b7102970d2db94de800d246031.jpg",
+			"sellerName": "Ewan Lejkowski",
+			"uid": "88e4a93c-1cda-4902-8aa1-88279cd8a08f"
+		},
+		"tags": [
+			{
+				"name": "Duster",
+				"slug": "duster",
+				"uid": "1b3c6313-afda-4597-9e5e-3abb28f49dd8"
+			},
+			{
+				"name": "Whiteboard",
+				"slug": "whiteboard",
+				"uid": "abc4a3ca-5260-446a-b7d1-0158fee80689"
+			},
+			{
+				"name": "Board",
+				"slug": "board",
+				"uid": "b2a8a909-bd3d-4d2b-860c-3c16482584e6"
+			}
+		],
+		"category":
+		{
+			"name": "Furniture & Fixtures",
+			"path": "furniture-fixtures",
+			"slug": "furniture-fixtures",
+			"uid": "3da1d2bd-49b4-4bc5-90e5-d31dadec3bd0"
+		},
+		"assetFormats": [
+			{
+				"assetFormatType":
+				{
+					"name": "Blender",
+					"groupName": "3D DCC Formats",
+					"code": "blender",
+					"icon": "blender",
+					"extensions": [
+						"blend"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "Converted Files",
+					"groupName": "",
+					"code": "converted-files",
+					"icon": "cube",
+					"extensions": [
+						"gltf",
+						"glb",
+						"usdz"
+					]
+				}
+			}
+		],
+		"_PluginMetas":
+		{
+			"apiDataVersion": "0.0.1",
+			"entitlementUid": "6a5a0a59-a0fa-433a-a9e0-8fa09739826b",
+			"cacheSize": 0,
+			"downloaded": []
+		}
+	},
+	"target": "diskExport",
+	"quality": "",
+	"format": "glb",
+	"fileId": "fcec0794-7c9c-449e-8ed1-12158be2d67b",
+	"platformIncluded": "",
+	"distributionPointBaseUrls": [],
+	"distributionMethod": "",
+	"entitlementUid": "6a5a0a59-a0fa-433a-a9e0-8fa09739826b",
+	"invertedNormal": false,
+	"isConverted": true,
+	"isQuixel": false
+}

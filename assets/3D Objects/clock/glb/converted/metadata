@@ -1,0 +1,92 @@
+{
+	"assetNamespace": "fab",
+	"listing":
+	{
+		"averageRating": 5,
+		"createdAt": "",
+		"description": "<p>low poly clock, ready for anymation. If you like to use it in your VR environment and render is, it has lightmaps allready layed out on the second UV</p>",
+		"isAiForbidden": false,
+		"isAiGenerated": false,
+		"lastUpdatedAt": "",
+		"listingType": "3d-model",
+		"media": "https://media.fab.com/image_previews/gallery_images/ab91af8e-5851-4a8e-a18a-87261cf36d8c/6526b7d8-80ad-4b3a-a02e-40a950f51056.jpeg",
+		"publishedAt": "2024-10-17T19:32:36.659102Z",
+		"reviewCount": 1,
+		"thumbnail": "https://media.fab.com/image_previews/gallery_images/d80cb55a-4a03-4984-9adb-9a69c3050c1b/e2c53f9b-c378-4a71-beb2-ebfe572164f5.jpeg",
+		"title": "clock",
+		"uid": "54536eb4-1013-451d-aa04-6d90a2ab8c2f",
+		"updatedAt": "",
+		"user":
+		{
+			"coverImageUrl": "",
+			"profileImageUrl": "",
+			"sellerName": "StefanieInVR",
+			"uid": "be08feb4-20c1-42e1-bb06-fa49c88bc27c"
+		},
+		"tags": [
+			{
+				"name": "Face",
+				"slug": "face",
+				"uid": "28e0291b-a1fa-4045-8829-b1a29106d0ff"
+			},
+			{
+				"name": "Clock",
+				"slug": "clock",
+				"uid": "e12ac8a7-104f-4b60-836d-b6df810b4c87"
+			}
+		],
+		"category":
+		{
+			"name": "Electronics & Technology",
+			"path": "electronics-technology",
+			"slug": "electronics-technology",
+			"uid": "18e672da-2da2-4d1b-b0a1-b6a64f108c69"
+		},
+		"assetFormats": [
+			{
+				"assetFormatType":
+				{
+					"name": "FBX",
+					"groupName": "3D Exchange Formats",
+					"code": "fbx",
+					"icon": "cube",
+					"extensions": [
+						"fbx"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "Converted Files",
+					"groupName": "",
+					"code": "converted-files",
+					"icon": "cube",
+					"extensions": [
+						"gltf",
+						"glb",
+						"usdz"
+					]
+				}
+			}
+		],
+		"_PluginMetas":
+		{
+			"apiDataVersion": "0.0.1",
+			"entitlementUid": "fefffc32-9468-40e4-8333-6a71f1d28a0b",
+			"cacheSize": 0,
+			"downloaded": []
+		}
+	},
+	"target": "diskExport",
+	"quality": "",
+	"format": "glb",
+	"fileId": "f02341b0-dfc2-4ebf-9063-84329db0b4d2",
+	"platformIncluded": "",
+	"distributionPointBaseUrls": [],
+	"distributionMethod": "",
+	"entitlementUid": "fefffc32-9468-40e4-8333-6a71f1d28a0b",
+	"invertedNormal": false,
+	"isConverted": true,
+	"isQuixel": false
+}

@@ -1,0 +1,507 @@
+[gd_scene format=4 uid="uid://cmvws5r2y1hn1"]
+
+[ext_resource type="PackedScene" uid="uid://4tnhlt6a1ce1" path="res://scenes/ceiling_light.tscn" id="1_tni2i"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_boths"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_nvd5d"]
+_surfaces = [{
+"aabb": AABB(-23.512913, -0.99999994, -44.593414, 54.05751, 2, 71.741295),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAwAAAAIAAwAEAAAAAAAEAAEAAwACAAUABQACAAEAAwAGAAQABQAGAAMABgABAAQABQABAAcABgAHAAEABQAHAAYA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAP//AADy////5P8AAP//AAD+/wAAAAAAAAAAAAAAAP//5P8AAGu9AACafAAAAAD//wAAAABsvf//m3wAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_54rh4"]
+resource_name = "Destroyed_Ceiling_Cube_cell_004"
+_surfaces = [{
+"aabb": AABB(-23.512913, -0.99999994, -44.593414, 54.05751, 2, 71.741295),
+"attribute_data": PackedByteArray("wv8NBhIG7PnX+ScGwv/i+f/fnX6NwDBa/98wWrnI4Gzh+R0GEgb//xwG4vnX+f///x+dfnM/LFpFN+Bs/x8sWv9fYcH/n87l/1/S5f+fYcHh+f//EgY9+uX5awYcBv//"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
+"material": SubResource("StandardMaterial3D_boths"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAAP/////y////5P//////AAD+////AAD//+T///8AAP//AAD///L////k////AAD//+T///9svf//m3z//2u9AACafDP/8v///+T/PN9svf//m3z5////AAD+/6PeAAAAAAAA/7///wAA/v//v2u9AACafP+/AAAAAP///78AAAAAAABU1QAA///k/1TVAAAAAP//VNUAAP//AABU1Wu9AACafM3rAAD//wAAGf8AAAAAAABy/2y9//+bfIvrGf8AABn/AAAZ/wAAGf8AAP9//7//f/+//3//v/9//78Gy7F+cLDOUcXL8n/cr9NQAAD/fwAA/38AAP9/AAD/f1TVVNVU1VTVVNVU1VTVVNVvttxK/dogfcrbOn7htRlK")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_nvd5d")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_o7uig"]
+points = PackedVector3Array(30.544598, -0.99999994, 27.140854, 30.52872, 1, 27.11277, -23.512913, -0.99999994, 27.14788, 16.485199, -0.99999994, -9.677818, 16.485199, 1, -9.677818, -23.512913, 1, 27.11277, -23.512913, -0.99999994, -44.593414, -23.512913, 1, -44.593414)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q84ef"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_oucqc"]
+_surfaces = [{
+"aabb": AABB(-30.810444, -1, -42.638042, 69.99898, 2, 101.10477),
+"format": 34896613377,
+"index_count": 48,
+"index_data": PackedByteArray("AAABAAIAAwAAAAIAAwACAAQAAQAEAAIAAAADAAUABAAFAAMAAQAAAAYAAAAFAAYAAQAHAAQABQAEAAcAAQAGAAgABQAIAAYACAAHAAEABQAHAAkACAAJAAcABQAJAAgA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 10,
+"vertex_data": PackedByteArray("AAD//wAAAABgM///ebwAAAAA//9QXwAAAAAAAAAAAAAAAAAAUV8AAP//AAAAAAAA/////wAAAABqMwAAjLwAAP/////w/wAA//8AAP//AAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_gtuvi"]
+resource_name = "Destroyed_Ceiling_Cube_cell_005"
+_surfaces = [{
+"aabb": AABB(-30.810444, -1, -42.638042, 69.99898, 2, 101.10477),
+"attribute_data": PackedByteArray("ucj/f4zAMFq5yOBs/5//f/+fp0xFN+Bs/1//f0U3/39zPyxa/1+kTHwG2vnw+f//IQb//0H6FAb//xEGIQbd+fD5Dgb//+35/5+5qP9f/3//n/9//1+5qP9f/3//n6dM/5//f/9fpEzk+cT/EQbt+e35EQYlBsT/"),
+"format": 34896613399,
+"index_count": 48,
+"index_data": PackedByteArray("AAABAAIAAQAAAAMAAQADAAQABQAGAAcABgAFAAgABgAIAAkACgALAAwACgANAAsADgAPABAADgARAA8AEgATABQAEgAVABMAFgAXABgAFgAZABcAGgAbABwAGgAdABsA"),
+"material": SubResource("StandardMaterial3D_q84ef"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 30,
+"vertex_data": PackedByteArray("AAD//wAA//9gM///ebz//wAA//9QX////////wAA////////8P///wAAAABRX/+///8AAAAA/78AAAAAAAD/v2ozAACMvP+///8AAP///78AAAAAAAAUwAAA//9QX4bUAAAAAFFfVtUAAP//AAAGwGAz//95vCKxAAAAAFFfIrEAAP//UF8isWozAACMvCKxAAD//wAA/////wAAAAD///////8AAP//AAAAAAAA/////wAAAABU1f/////w/1TV/////wAAVNX//wAA//9U1f/////w/4rBajMAAIy8OpJgM///ebwmkv//AAD//1rC/3//v/9//7//f/+//3//v/9//78AAP9/AAD/fwAA/38AAP9/AAD/f36Kv/pY1NLVV9VT1ZqGsfwCgPv/AYD7/wGA+/8CgPv//7//v/+//7//v/+//7//v6oqqiqqKqoqqiqqKqoqqipf7J/rDpJ5+nGMZvu57JDr")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_oucqc")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_tni2i"]
+points = PackedVector3Array(39.188534, -1, 58.466724, 39.188534, 1, 58.43703, -16.764057, 1, 31.795094, -16.757204, -1, 31.824787, 39.188534, -1, -42.638042, 39.188534, 1, -42.638042, -30.810444, 1, -5.000862, -30.810444, -1, -5.000862, -30.810444, -1, -42.638042, -30.810444, 1, -42.638042)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qnmq4"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ji7mt"]
+_surfaces = [{
+"aabb": AABB(-54.81077, -1, -25.96079, 110, 2, 51.559998),
+"format": 34896613377,
+"index_count": 48,
+"index_data": PackedByteArray("AAABAAIAAwACAAEAAgAEAAAAAgADAAQAAAAEAAUAAwABAAYABgAEAAMAAQAAAAcAAAAFAAcACAAGAAEAAQAHAAgABAAGAAkABAAJAAUACAAJAAYABwAFAAkABwAJAAgA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 10,
+"vertex_data": PackedByteArray("AAAAAP//AADPfQAAJAAAAAAAAAAjAAAAAAD//wAAAAAAAP////8AAP///////wAAyH3//wAAAAD//wAA//8AAP//AABnhAAA/////0mEAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_3wtux"]
+resource_name = "Destroyed_Ceiling_Cube_cell_001"
+_surfaces = [{
+"aabb": AABB(-54.81077, -1, -25.96079, 110, 2, 51.559998),
+"attribute_data": PackedByteArray("/x//P3M/LFr/Hyxa/1//P/9fpEz/X/8//5+nTP9fpEz/n/8/XAbd+fD5//8PBv//JPoVBv9fAAD/n/8//1//P/+fAACNwDBa/9//P//fMFr/n6dM/5//P/9f0uX/n////1////+fzuXB/xMG7/n//w4G///C/+X5"),
+"format": 34896613399,
+"index_count": 48,
+"index_data": PackedByteArray("AAABAAIAAQAAAAMAAQADAAQABQAGAAcABQAIAAYACQAKAAsACQAMAAoADQAOAA8ADQAQAA4AEQASABMAEgARABQAEgAUABUAFgAXABgAFgAZABcAGgAbABwAGgAdABsA"),
+"material": SubResource("StandardMaterial3D_qnmq4"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 30,
+"vertex_data": PackedByteArray("AAAAAP///7/PfQAAJAD/vwAAAAAjAP+///8AAP///7///wAAZ4T/v///AAD//1TV/////0mEVNX//wAAZ4RU1f///////1TV//8AAGeE4u3Iff//AAC/8s99AAAkAODy/////0mE4u0AAAAA////v/////////+///8AAP///78AAP//////v8h9//8AAP//AAD///////8AAP//AAD///////9JhP////////////8AAAAAIwBU1QAA/////1TVAAAAAP//VNUAAP//AABU1QAA//8AAP//z30AACQAmP/Iff//AACW/wAAAAAjAP//AAD/fwAA/38AAP9/AAD/fwAA/3+qKqoqqiqqKqoqqiqqKqoqYXyCA5k63zjtOWs5xX1qAv//////////////////////f/+//3//v/9//7//f/+//3//v1TVVNVU1VTVVNVU1VTVVNWKfWz+XEDQwJc/CsAMf/H/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_ji7mt")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_h3yf2"]
+points = PackedVector3Array(-54.81077, 1, -25.96079, -54.81077, -1, -25.935556, -54.81077, 1, 25.59921, -0.7690697, 1, -25.96079, -54.81077, -1, 25.59921, -0.7583008, -1, -25.935556, 55.18923, 1, 25.59921, 55.18923, 1, 0.68224335, 55.18923, -1, 25.59921, 55.18923, -1, 0.70243263)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l0syd"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_3537o"]
+_surfaces = [{
+"aabb": AABB(-19.99937, -0.99999994, -10.091531, 39.99894, 2, 37.6429),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAgAEAAAABQABAAMABQACAAEAAgAGAAQABQAGAAIABwAAAAQABwADAAAABwAEAAYABQADAAcABwAGAAUA"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("/v///wAAAAD+/wAA//8AAP/////+/wAA/v8AAAAAAAAAAP//AAAAAAAAAACFEgAAAAD//4QSAAAAAAAAAAAAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_jj841"]
+resource_name = "Destroyed_Ceiling_Cube_cell_002"
+_surfaces = [{
+"aabb": AABB(-19.99937, -0.99999994, -10.091531, 39.99894, 2, 37.6429),
+"attribute_data": PackedByteArray("p/9mBun5//8OBv//qP9L+m4G4/nw+f//FQb//zb6Ggb/H51+RTf/f/8f/39FN+Bs/1//v/+fuaj/n/+//1+5qLnI4Gz/3/9/ucj/f//fnX7/X/+//59hwf9fYcH/n/+/"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
+"material": SubResource("StandardMaterial3D_l0syd"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("/v///wAAAsD+/wAA//+E1P/////+/1XV/v8AAAAA/78AAAAAhRJZnf/////+/ybE/v8AAP//B8UAAP//hBJInQAAAACFEv+//v8AAAAA/78AAAAAAAD/v/7/AAD///+/AAAAAAAA///+////AAD//wAA//8AAP///v8AAAAA/////////v///wAA//8AAP///v///wAA//8AAP//hBL//wAAAAAAAFTVAAD//4QSVNUAAAAAhRJU1QAA//8AAFTVOoJ4BCmqVVSpqlVVEoAoAEmNWPwJ5LPkkeSO5HmIqP0AAP9/AAD/fwAA/38AAP9//7//v/+//7//v/+//7//v/9//7//f/+//3//v/9//79U1VTVVNVU1VTVVNVU1VTV")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_3537o")
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_6ecsl"]
+points = PackedVector3Array(-19.99937, -0.99999994, -10.091531, -19.99937, 1, -10.091531, 19.995655, -0.99999994, -10.091531, -19.99937, -0.99999994, -7.3685374, -19.99937, 1, -7.372222, 19.995655, 1, -10.091531, 19.999569, 1, 27.547684, 19.995655, -0.99999994, 27.551369)
+
+[sub_resource type="Animation" id="Animation_o7uig"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Ceiling1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-31.487087, 0, -15.68104)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Ceiling1:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Ceiling1:freeze")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Ceiling2:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(15.811463, 0, -20.361958)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Ceiling2:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Ceiling2:freeze")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Ceiling3:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-0.18923187, 0, 37.400795)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Ceiling3:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Ceiling3:freeze")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Ceiling4:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-35.00063, 0, -52.90847)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Ceiling4:rotation")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Ceiling4:freeze")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_tni2i"]
+resource_name = "ceiling_collapse"
+length = 3.0000000000000004
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Ceiling1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(-31.487087, 0, -15.68104), Vector3(-31.487087, -24.295769, -15.68104)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Ceiling1:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0.26149526, 0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Ceiling1:freeze")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Ceiling2:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(15.811463, 0, -20.361958), Vector3(15.811463, -12.28014, -20.361958)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Ceiling2:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0.19814608, 0, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Ceiling2:freeze")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Ceiling3:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(-0.18923187, 0, 37.400795), Vector3(-0.18923187, -17.366753, 37.400795)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Ceiling3:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0.25411692, 0, 0)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Ceiling3:freeze")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Ceiling4:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(-35.00063, 0, -52.90847), Vector3(-35.00063, -12.773714, -52.90847)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Ceiling4:rotation")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(-0.47410238, 0, 0)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Ceiling4:freeze")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_h3yf2"]
+_data = {
+&"RESET": SubResource("Animation_o7uig"),
+&"ceiling_collapse": SubResource("Animation_tni2i")
+}
+
+[node name="DestroyedCeiling" type="Node3D" unique_id=195483332]
+
+[node name="Ceiling1" type="RigidBody3D" parent="." unique_id=328168186]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.487087, 0, -15.68104)
+freeze = true
+freeze_mode = 1
+
+[node name="CeilingLight" parent="Ceiling1" unique_id=1253728184 instance=ExtResource("1_tni2i")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.4870872, -1.1, -14.31896)
+
+[node name="Cube_cell" type="MeshInstance3D" parent="Ceiling1" unique_id=974041832]
+mesh = SubResource("ArrayMesh_54rh4")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ceiling1" unique_id=330922517]
+shape = SubResource("ConvexPolygonShape3D_o7uig")
+
+[node name="Ceiling2" type="RigidBody3D" parent="." unique_id=761592513]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.811463, 0, -20.361958)
+freeze = true
+freeze_mode = 1
+
+[node name="CeilingLight2" parent="Ceiling2" unique_id=2146662625 instance=ExtResource("1_tni2i")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 14.188537, -1.1, -9.638042)
+
+[node name="Cube_cell_001" type="MeshInstance3D" parent="Ceiling2" unique_id=1557568382]
+mesh = SubResource("ArrayMesh_gtuvi")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ceiling2" unique_id=374279214]
+shape = SubResource("ConvexPolygonShape3D_tni2i")
+
+[node name="Ceiling3" type="RigidBody3D" parent="." unique_id=1980412351]
+transform = Transform3D(0.9999999, 0, 0, 0, 0.9999999, 0, 0, 0, 1, -0.18923187, 0, 37.400795)
+freeze = true
+freeze_mode = 1
+
+[node name="CeilingLight3" parent="Ceiling3" unique_id=730614851 instance=ExtResource("1_tni2i")]
+transform = Transform3D(3.0000005, 0, 0, 0, 3.0000005, 0, 0, 0, 3, 30.189236, -1.1000001, -7.400795)
+
+[node name="CeilingLight4" parent="Ceiling3" unique_id=1913206388 instance=ExtResource("1_tni2i")]
+transform = Transform3D(3.0000005, 0, 0, 0, 3.0000005, 0, 0, 0, 3, -29.810772, -1.1000001, -7.400795)
+
+[node name="Cube_cell_002" type="MeshInstance3D" parent="Ceiling3" unique_id=1537257599]
+transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("ArrayMesh_3wtux")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ceiling3" unique_id=653521888]
+transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0, 0, 0)
+shape = SubResource("ConvexPolygonShape3D_h3yf2")
+
+[node name="Ceiling4" type="RigidBody3D" parent="." unique_id=905482547]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.00063, 0, -52.90847)
+freeze = true
+freeze_mode = 1
+
+[node name="Cube_cell_003" type="MeshInstance3D" parent="Ceiling4" unique_id=857804310]
+mesh = SubResource("ArrayMesh_jj841")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ceiling4" unique_id=747503973]
+shape = SubResource("ConvexPolygonShape3D_6ecsl")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1774597265]
+libraries/ = SubResource("AnimationLibrary_h3yf2")

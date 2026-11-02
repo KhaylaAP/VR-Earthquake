@@ -1,0 +1,171 @@
+[gd_scene format=3 uid="uid://blceh5byitm2"]
+
+[ext_resource type="Script" uid="uid://bh0j8d1kbpuxc" path="res://scenes/earthquake_options.gd" id="1_in7ek"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j6sua"]
+bg_color = Color(0, 0.12941177, 0.16862746, 0.6862745)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ibbg4"]
+bg_color = Color(0.83889705, 0.83889705, 0.8388969, 1)
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_00ifl"]
+content_margin_left = 25.0
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_7ifrn"]
+
+[sub_resource type="Theme" id="Theme_00ifl"]
+PopupMenu/colors/font_color = Color(0, 0, 0, 1)
+PopupMenu/colors/font_hover_color = Color(0.5074521, 0.5604651, 0.64990616, 1)
+PopupMenu/font_sizes/font_size = 36
+PopupMenu/styles/hover = SubResource("StyleBoxFlat_ibbg4")
+PopupMenu/styles/panel = SubResource("StyleBoxFlat_00ifl")
+PopupMenu/styles/separator = SubResource("StyleBoxLine_7ifrn")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_in7ek"]
+content_margin_left = 25.0
+content_margin_top = 5.0
+content_margin_bottom = 5.0
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7ifrn"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p7grc"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cj5y2"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="earthquake_options" type="Control" unique_id=734642528]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_in7ek")
+
+[node name="Panel" type="Panel" parent="." unique_id=1087492915]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_j6sua")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=946920866]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -415.0
+offset_top = -75.0
+offset_right = 415.0
+offset_bottom = 75.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 35
+
+[node name="OptionButton" type="Button" parent="VBoxContainer" unique_id=1767189545]
+layout_mode = 2
+size_flags_vertical = 3
+theme = SubResource("Theme_00ifl")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.5074521, 0.5604651, 0.64990616, 1)
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_in7ek")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_in7ek")
+theme_override_styles/hover = SubResource("StyleBoxFlat_in7ek")
+text = "Choose Earthquake:"
+alignment = 0
+
+[node name="DropdownPanel" type="Panel" parent="VBoxContainer/OptionButton" unique_id=2009087448]
+top_level = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -415.0
+offset_top = -138.03
+offset_right = 415.0
+offset_bottom = 187.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_in7ek")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/OptionButton/DropdownPanel" unique_id=825121410]
+layout_mode = 0
+offset_right = 830.0
+offset_bottom = 60.0
+
+[node name="TemplateButton" type="Button" parent="VBoxContainer/OptionButton/DropdownPanel/VBoxContainer" unique_id=1461449774]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.29219002, 0.29219005, 0.29219002, 1)
+theme_override_colors/font_hover_color = Color(0.72464246, 0.7246426, 0.72464335, 1)
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_in7ek")
+text = "Megathrust Jawa"
+alignment = 0
+
+[node name="LabelJarak" type="Label" parent="VBoxContainer" unique_id=1612090651]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "Jarak: "
+
+[node name="LabelGoldenTime" type="Label" parent="VBoxContainer" unique_id=1160751224]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "Golden Time: "
+
+[node name="LabelMagnitudo" type="Label" parent="VBoxContainer" unique_id=1283183478]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "Magnitudo: "
+
+[node name="ConfirmButton" type="Button" parent="VBoxContainer" unique_id=369128283]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 1, 0, 1)
+theme_override_colors/font_hover_color = Color(0.5074521, 0.5604651, 0.64990616, 1)
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_7ifrn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_p7grc")
+theme_override_styles/hover = SubResource("StyleBoxFlat_cj5y2")
+text = "Confirm"

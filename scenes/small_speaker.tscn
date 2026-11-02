@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://5i6h3rx3a3b3"]
+
+[ext_resource type="ArrayMesh" uid="uid://isgq1sjfj2to" path="res://meshes/new_array_mesh.tres" id="1_bww7r"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_rwci2"]
+friction = 0.5
+bounce = 0.15
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g4v7s"]
+size = Vector3(0.6859741, 1, 0.66381836)
+
+[node name="SmallSpeaker" type="RigidBody3D" unique_id=34274015]
+mass = 0.8
+physics_material_override = SubResource("PhysicsMaterial_rwci2")
+
+[node name="SM_Speaker_01_Speaker_01_0" type="MeshInstance3D" parent="." unique_id=622351666]
+transform = Transform3D(0.05, 0, 0, 0, -2.1855695e-09, 0.05, 0, -0.05, -2.1855695e-09, 0.09217331, -6.8062274e-18, 0.030652523)
+mesh = ExtResource("1_bww7r")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1511037636]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.092437744, 0.49707863, 0.036743164)
+shape = SubResource("BoxShape3D_g4v7s")

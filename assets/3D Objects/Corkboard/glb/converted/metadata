@@ -1,0 +1,154 @@
+{
+	"assetNamespace": "fab",
+	"listing":
+	{
+		"averageRating": 0,
+		"createdAt": "",
+		"description": "<p>Simple Corkboard, handy prop for any sort of interior scene such as a school or office. </p>\n<p>Comes little pins that can be moved around.  </p>\n<p>PBR textures <a target=\"_blank\" href=\"/4k\" rel=\"noopener noreferrer nofollow\"></a><a href=\"/users/4k\" rel=\"noopener noreferrer nofollow\">@4k</a></p>",
+		"isAiForbidden": true,
+		"isAiGenerated": false,
+		"lastUpdatedAt": "",
+		"listingType": "3d-model",
+		"media": "https://media.fab.com/image_previews/gallery_images/356e0b49-bc91-4040-89f0-b940ccea0fcf/3b099183-bf74-4948-9ea8-b6d4c015f6a5.jpeg",
+		"publishedAt": "2026-05-01T21:51:17.823696Z",
+		"reviewCount": 0,
+		"thumbnail": "https://media.fab.com/image_previews/gallery_images/99e27f60-0e05-46e8-8c99-62a5551a5735/bd436ed5-2493-43ff-8c4a-d1d954326e8f.jpeg",
+		"title": "Corkboard",
+		"uid": "85b059ae-9d9e-472a-af01-1929512e0975",
+		"updatedAt": "",
+		"user":
+		{
+			"coverImageUrl": "https://cdn1.epicgames.com/fab/seller/o-ynhmd9y8ef3wnpurw5n6t58medckvp/cover/15fbb6a0.jpg",
+			"profileImageUrl": "",
+			"sellerName": "Roy Sousa",
+			"uid": "ce6adde9-bde6-4467-bee7-ac3e0ab6d998"
+		},
+		"tags": [
+			{
+				"name": "Chalkboard",
+				"slug": "chalkboard",
+				"uid": "05d7ebf0-e06c-4357-9ea2-1cd5636f8c21"
+			},
+			{
+				"name": "Pbr",
+				"slug": "pbr",
+				"uid": "080edd3b-d10a-4f32-ace2-30f5baa480dc"
+			},
+			{
+				"name": "Furniture",
+				"slug": "furniture",
+				"uid": "0f6b3b40-8715-4963-b755-0160e80cf12c"
+			},
+			{
+				"name": "Note",
+				"slug": "note",
+				"uid": "380f8c21-a803-4694-a226-901247be219f"
+			},
+			{
+				"name": "University",
+				"slug": "university",
+				"uid": "57371348-d035-4aca-9334-9a83a236f565"
+			},
+			{
+				"name": "Pin",
+				"slug": "pin",
+				"uid": "865182f7-d483-4a38-86a1-7705db08d1c6"
+			},
+			{
+				"name": "Office",
+				"slug": "office",
+				"uid": "97e8ad1e-f7c1-4bc3-9293-bb9f268d5d60"
+			},
+			{
+				"name": "Interior",
+				"slug": "interior",
+				"uid": "9c40f9f3-f44a-4fba-8221-80d7ef90592a"
+			},
+			{
+				"name": "Board",
+				"slug": "board",
+				"uid": "b2a8a909-bd3d-4d2b-860c-3c16482584e6"
+			},
+			{
+				"name": "Classroom",
+				"slug": "classroom",
+				"uid": "cf88174b-b0e5-4a3b-bf80-59032febfe83"
+			},
+			{
+				"name": "College",
+				"slug": "college",
+				"uid": "dcdb4b18-869e-4ff0-ae3e-0ba3e11f61ed"
+			},
+			{
+				"name": "School",
+				"slug": "school",
+				"uid": "eccf63f5-f96f-41ed-8a00-891761792fcd"
+			}
+		],
+		"category":
+		{
+			"name": "Buildings & Architecture",
+			"path": "buildings-architecture",
+			"slug": "buildings-architecture",
+			"uid": "eec3bdd5-ba7a-45a8-b15d-67462b9630f6"
+		},
+		"assetFormats": [
+			{
+				"assetFormatType":
+				{
+					"name": "GLTF",
+					"groupName": "3D Exchange Formats",
+					"code": "gltf",
+					"icon": "cube",
+					"extensions": [
+						"gltf"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "Additional files",
+					"groupName": "Other Formats",
+					"code": "additional-files",
+					"icon": "file",
+					"extensions": [
+						"zip"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "Converted Files",
+					"groupName": "",
+					"code": "converted-files",
+					"icon": "cube",
+					"extensions": [
+						"gltf",
+						"glb",
+						"usdz"
+					]
+				}
+			}
+		],
+		"_PluginMetas":
+		{
+			"apiDataVersion": "0.0.1",
+			"entitlementUid": "5231e823-6ab1-4957-ac0b-1d8b789118e1",
+			"cacheSize": 0,
+			"downloaded": []
+		}
+	},
+	"target": "diskExport",
+	"quality": "",
+	"format": "glb",
+	"fileId": "238c9775-270f-4426-8b96-e155459dead9",
+	"platformIncluded": "",
+	"distributionPointBaseUrls": [],
+	"distributionMethod": "",
+	"entitlementUid": "5231e823-6ab1-4957-ac0b-1d8b789118e1",
+	"invertedNormal": false,
+	"isConverted": true,
+	"isQuixel": false
+}

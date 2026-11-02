@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://bq6xa3a6bror"]
+
+[ext_resource type="Script" uid="uid://br02hp0ec64jq" path="res://scenes/wall_objects.gd" id="1_1jtkn"]
+[ext_resource type="PackedScene" uid="uid://bdejgvegusms5" path="res://assets/3D Objects/Corkboard/glb/converted/corkboard.glb" id="1_5to4l"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_5to4l"]
+friction = 0.7
+bounce = 0.05
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1aly4"]
+size = Vector3(0.2741089, 6.0004272, 9.005829)
+
+[node name="WallBoard" type="RigidBody3D" unique_id=556369085]
+mass = 2.0
+physics_material_override = SubResource("PhysicsMaterial_5to4l")
+script = ExtResource("1_1jtkn")
+break_intensity_threshold = 4.6
+push_outward_min = 0.3
+push_outward_max = 0.8
+push_sideways_variance = 0.3
+
+[node name="Sketchfab_Scene" parent="." unique_id=1285874379 instance=ExtResource("1_5to4l")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=519822600]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.13668823, 2.9225059, -0.0019683838)
+shape = SubResource("BoxShape3D_1aly4")
+
+[node name="Generic6DOFJoint3D" type="Generic6DOFJoint3D" parent="." unique_id=1619045109]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17811462, 4.5076494, -0.05759436)
+node_a = NodePath("..")
+angular_limit_x/upper_angle = 0.08726646
+angular_limit_x/lower_angle = -0.08726646
+angular_limit_z/upper_angle = 0.08726646
+angular_limit_z/lower_angle = -0.08726646

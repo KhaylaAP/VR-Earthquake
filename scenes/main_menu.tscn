@@ -1,0 +1,96 @@
+[gd_scene format=3 uid="uid://ctv3rak2x65nf"]
+
+[ext_resource type="Script" uid="uid://dspam6uvwy2gm" path="res://scenes/main_menu.gd" id="1_l6cm7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vue75"]
+bg_color = Color(0, 0.12941177, 0.16862746, 0.6862745)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fqvwe"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="Main Menu" type="Control" unique_id=1898129587]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_l6cm7")
+
+[node name="Panel" type="Panel" parent="." unique_id=776167276]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_vue75")
+
+[node name="Label" type="Label" parent="Panel" unique_id=1106514195]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -221.0
+offset_top = -259.0
+offset_right = 221.0
+offset_bottom = -176.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 60
+text = "Choose a Mode"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel" unique_id=1524684286]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 75
+
+[node name="SimulationButton" type="Button" parent="Panel/HBoxContainer" unique_id=152965585]
+custom_minimum_size = Vector2(250, 230)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.29411766, 0.29411766, 0.29411766, 1)
+theme_override_colors/font_hover_color = Color(0.7254902, 0.7254902, 0.7254902, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_fqvwe")
+text = "Simulation"
+
+[node name="TrainingButton" type="Button" parent="Panel/HBoxContainer" unique_id=1985136401]
+custom_minimum_size = Vector2(250, 230)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.29411766, 0.29411766, 0.29411766, 1)
+theme_override_colors/font_hover_color = Color(0.7254902, 0.7254902, 0.7254902, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_fqvwe")
+text = "Training"
+
+[node name="TestingButton" type="Button" parent="Panel/HBoxContainer" unique_id=240276666]
+custom_minimum_size = Vector2(250, 230)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.29411766, 0.29411766, 0.29411766, 1)
+theme_override_colors/font_hover_color = Color(0.7254902, 0.7254902, 0.7254902, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_fqvwe")
+text = "Testing"

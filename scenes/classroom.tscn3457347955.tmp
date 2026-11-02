@@ -1,0 +1,95 @@
+[gd_scene format=3 uid="uid://b52lj1klf0oaj"]
+
+[ext_resource type="PackedScene" uid="uid://pk4366l8wrsy" path="res://scenes/zone_base.tscn" id="1_w75qy"]
+[ext_resource type="PackedScene" uid="uid://blpy7txiage7e" path="res://scenes/classroom_model.tscn" id="2_8nrr8"]
+[ext_resource type="Texture2D" uid="uid://cdg3ll04t4fuv" path="res://assets/HDRI/quadrangle_sunny_4k.exr" id="2_x5cc4"]
+[ext_resource type="Script" uid="uid://enpssrcl4jos" path="res://scenes/eewsui.gd" id="3_kkrti"]
+[ext_resource type="LightmapGIData" uid="uid://cumorouc6fx2h" path="res://scenes/classroom.lmbake" id="3_xkx8l"]
+[ext_resource type="AudioStream" uid="uid://fr4y25w2dxux" path="res://audio/Earthquake_Warning.mp3" id="4_xubko"]
+[ext_resource type="Script" uid="uid://dge1kye5h7ity" path="res://scenes/results.gd" id="6_rt84g"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_kkrti"]
+panorama = ExtResource("2_x5cc4")
+
+[sub_resource type="Sky" id="Sky_xubko"]
+sky_material = SubResource("PanoramaSkyMaterial_kkrti")
+
+[sub_resource type="Environment" id="Environment_kkrti"]
+background_mode = 2
+sky = SubResource("Sky_xubko")
+sky_rotation = Vector3(0, -1.5707964, 0)
+ambient_light_source = 3
+reflected_light_source = 2
+tonemap_mode = 2
+glow_enabled = true
+glow_intensity = 1.0
+glow_strength = 1.3
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_xubko"]
+radius = 0.25657472
+
+[node name="Classroom" unique_id=315214593 instance=ExtResource("1_w75qy")]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." index="0" unique_id=846349689]
+transform = Transform3D(-0.58212286, 0.704166, -0.40655038, 0, 0.49999997, 0.86602545, 0.8131008, 0.5041332, -0.2910614, -5.1225247, 9.181911, -4.887951)
+light_energy = 2.0
+shadow_enabled = true
+shadow_bias = 0.0
+shadow_normal_bias = 10.0
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." index="1" unique_id=155467814]
+environment = SubResource("Environment_kkrti")
+
+[node name="LightmapGI" type="LightmapGI" parent="." index="2" unique_id=1576522767]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7937851, -5.1324778)
+interior = true
+light_data = ExtResource("3_xkx8l")
+
+[node name="XROrigin3D" parent="." index="3"]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0.20716274, -11.689668)
+current = true
+
+[node name="PlayerHead" type="Area3D" parent="XROrigin3D/XRCamera3D" index="3" unique_id=1436310377]
+collision_mask = 7
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="XROrigin3D/XRCamera3D/PlayerHead" index="0" unique_id=1184200710]
+shape = SubResource("SphereShape3D_xubko")
+
+[node name="EEWSUI" type="Label3D" parent="XROrigin3D/XRCamera3D" index="4" unique_id=899581210]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1368684e-13, 0, -1)
+pixel_size = 0.003
+billboard = 1
+no_depth_test = true
+modulate = Color(1, 1, 1, 0)
+outline_modulate = Color(0, 0, 0, 0)
+text = "Test"
+font_size = 30
+script = ExtResource("3_kkrti")
+
+[node name="WarningAudio" type="AudioStreamPlayer" parent="XROrigin3D/XRCamera3D/EEWSUI" index="0" unique_id=1626341366]
+stream = ExtResource("4_xubko")
+volume_db = -15.0
+
+[node name="Results" type="Label3D" parent="XROrigin3D/XRCamera3D" index="5" unique_id=569586222]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
+pixel_size = 0.003
+billboard = 1
+no_depth_test = true
+modulate = Color(1, 1, 1, 0)
+outline_modulate = Color(0, 0, 0, 0)
+text = "Test"
+font_size = 30
+script = ExtResource("6_rt84g")
+
+[node name="MovementCrouch" parent="XROrigin3D/RightHand" index="2" unique_id=450133347]
+crouch_height = 0.5
+
+[node name="PlayerBody" parent="XROrigin3D" index="3" unique_id=1003759215]
+slide_on_ceiling = false
+
+[node name="ClassroomModel" parent="." index="4" unique_id=1944298536 instance=ExtResource("2_8nrr8")]
+transform = Transform3D(-6.5567085e-09, 0, -0.15, 0, 0.15, 0, 0.15, 0, -6.5567085e-09, -3.4, 0, 0.2)
+
+[connection signal="body_entered" from="XROrigin3D/XRCamera3D/PlayerHead" to="XROrigin3D" method="_on_player_head_body_entered"]
+
+[editable path="ClassroomModel"]

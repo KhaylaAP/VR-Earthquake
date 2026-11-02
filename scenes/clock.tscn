@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://cgn0i0vanvq4m"]
+
+[ext_resource type="PackedScene" uid="uid://c08lo4mgt4q73" path="res://assets/3D Objects/clock/glb/converted/clock.glb" id="1_vlc7k"]
+[ext_resource type="Script" uid="uid://br02hp0ec64jq" path="res://scenes/wall_objects.gd" id="1_y58p0"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_vlc7k"]
+friction = 0.6
+bounce = 0.1
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_yf5fn"]
+height = 0.1388855
+radius = 1.0395508
+
+[node name="Clock" type="RigidBody3D" unique_id=188022522]
+physics_material_override = SubResource("PhysicsMaterial_vlc7k")
+script = ExtResource("1_y58p0")
+
+[node name="Sketchfab_Scene" parent="." unique_id=1639329126 instance=ExtResource("1_vlc7k")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=357105548]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0.0060330406, 0.012924194)
+shape = SubResource("CylinderShape3D_yf5fn")
+
+[node name="Generic6DOFJoint3D" type="Generic6DOFJoint3D" parent="." unique_id=1205766217]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.05759436)
+node_a = NodePath("..")
+angular_limit_x/upper_angle = 0.08726646
+angular_limit_x/lower_angle = -0.08726646
+angular_limit_z/upper_angle = 0.08726646
+angular_limit_z/lower_angle = -0.08726646

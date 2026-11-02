@@ -1,0 +1,153 @@
+[gd_scene format=3 uid="uid://lclmshavq5v5"]
+
+[ext_resource type="ArrayMesh" uid="uid://00udpoxyi4yh" path="res://assets/school_models/Table/Table.obj" id="1_adig8"]
+[ext_resource type="Texture2D" uid="uid://bte4d5dr4d88g" path="res://assets/school_models/TableTexture.jpg" id="2_muqw8"]
+[ext_resource type="ArrayMesh" uid="uid://c2pdkq8sg4djk" path="res://assets/school_models/Teacher_chair/Teacher_chair.obj" id="3_vofrq"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_adig8"]
+friction = 0.3
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_57qmd"]
+albedo_color = Color(0.5409902, 0.5409906, 0.5409904, 1)
+albedo_texture = ExtResource("2_muqw8")
+uv1_scale = Vector3(3, 3, 3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_yf5fn"]
+material = SubResource("StandardMaterial3D_57qmd")
+size = Vector3(0.2770872, 0.32796478, 0.010437012)
+
+[sub_resource type="BoxMesh" id="BoxMesh_igjg2"]
+material = SubResource("StandardMaterial3D_57qmd")
+size = Vector3(0.14715938, 0.21006298, 0.013519287)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cllil"]
+albedo_color = Color(0.11119685, 0.11119684, 0.11119684, 1)
+uv1_scale = Vector3(3, 3, 3)
+
+[sub_resource type="BoxMesh" id="BoxMesh_p10va"]
+material = SubResource("StandardMaterial3D_cllil")
+size = Vector3(0.021963233, 0.34157825, 0.0067977905)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_d0u6y"]
+size = Vector3(1.1958078, 0.053162113, 0.43234372)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pi0oi"]
+size = Vector3(1.1395282, 0.6512413, 0.041367173)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_skdl1"]
+size = Vector3(0.041550122, 0.053162113, 0.4051367)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wcln6"]
+size = Vector3(0.041550122, 0.053162113, 0.4051367)
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_muqw8"]
+friction = 0.3
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d0u6y"]
+albedo_color = Color(0.29411766, 0.28235295, 0.24705882, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_57qmd"]
+material = SubResource("StandardMaterial3D_d0u6y")
+top_radius = 0.0063476563
+bottom_radius = 0.0063476563
+height = 0.110961914
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_adig8"]
+material = SubResource("StandardMaterial3D_d0u6y")
+top_radius = 0.0063476563
+bottom_radius = 0.0063476563
+height = 0.18130493
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3gngh"]
+size = Vector3(0.4016496, 0.13352251, 0.40563333)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_adig8"]
+size = Vector3(0.4016496, 0.47129682, 0.11442487)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_muqw8"]
+size = Vector3(0.018846996, 0.3107798, 0.014205143)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vofrq"]
+size = Vector3(0.018846996, 0.3107798, 0.014205143)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qt57x"]
+size = Vector3(0.018846996, 0.35619977, 0.014205143)
+
+[node name="MejaKursiGuru" type="Node3D" unique_id=1720367425]
+
+[node name="MejaRigidBody" type="RigidBody3D" parent="." unique_id=2009887078]
+mass = 25.0
+physics_material_override = SubResource("PhysicsMaterial_adig8")
+
+[node name="TeacherTableMesh" type="MeshInstance3D" parent="MejaRigidBody" unique_id=1366622202]
+transform = Transform3D(1, 0, 0, 0, 0.034899496, 0.99939084, 0, -0.99939084, 0.034899496, 0, 0, 0)
+mesh = ExtResource("1_adig8")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="MejaRigidBody/TeacherTableMesh" unique_id=1087484019]
+transform = Transform3D(-4.3711882e-08, 1.0000037, 0, -0.99966866, -4.369657e-08, 0.026177123, 0.02617733, 1.144235e-09, 0.99965763, -0.39649582, 0.021547794, 0.72398585)
+mesh = SubResource("BoxMesh_yf5fn")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="MejaRigidBody/TeacherTableMesh" unique_id=464601963]
+transform = Transform3D(-4.371191e-08, 1.0000037, 0, -0.087156884, -3.8097205e-09, -0.9961958, -0.9962073, -4.3545214e-08, 0.08715599, 0.3543043, -0.1673559, 0.37245473)
+mesh = SubResource("BoxMesh_igjg2")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="MejaRigidBody/TeacherTableMesh" unique_id=522920760]
+transform = Transform3D(-4.3711328e-08, 1.0000037, -1.1478236e-13, -0.087157354, -3.8096744e-09, -0.9961959, -0.99622333, -4.3543903e-08, 0.087154955, 0.3750491, -0.13581705, 0.5937884)
+mesh = SubResource("BoxMesh_p10va")
+
+[node name="TeacherTableCollision" type="CollisionShape3D" parent="MejaRigidBody" unique_id=1078380322]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00039345026, 0.7107247, 0.018465638)
+shape = SubResource("BoxShape3D_d0u6y")
+
+[node name="TeacherTableCollision2" type="CollisionShape3D" parent="MejaRigidBody" unique_id=1935753068]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00033324957, 0.3670225, 0.17242622)
+shape = SubResource("BoxShape3D_pi0oi")
+
+[node name="TeacherTableCollision3" type="CollisionShape3D" parent="MejaRigidBody" unique_id=698253819]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5654691, 0.054531887, 0.0048621297)
+shape = SubResource("BoxShape3D_skdl1")
+
+[node name="TeacherTableCollision4" type="CollisionShape3D" parent="MejaRigidBody" unique_id=674519491]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5531632, 0.054531887, 0.0048621297)
+shape = SubResource("BoxShape3D_wcln6")
+
+[node name="KursiRigidBody" type="RigidBody3D" parent="." unique_id=601772696]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.13795187, -0.58207905)
+mass = 10.0
+physics_material_override = SubResource("PhysicsMaterial_muqw8")
+
+[node name="TeacherChairMesh" type="MeshInstance3D" parent="KursiRigidBody" unique_id=265229900]
+transform = Transform3D(1, 0, 0, 0, 0.06975651, 0.9975641, 0, -0.9975641, 0.06975651, 0, -0.16502821, 0)
+mesh = ExtResource("3_vofrq")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="KursiRigidBody/TeacherChairMesh" unique_id=1446085632]
+transform = Transform3D(1, 0, 0, 0, -0.10408051, 0.99456286, 0, -0.99456286, -0.10408051, 0.2061066, -0.21650884, 0.10501001)
+mesh = SubResource("CylinderMesh_57qmd")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="KursiRigidBody/TeacherChairMesh" unique_id=230265802]
+transform = Transform3D(1, 0, 0, 0, -0.10408051, 0.99456286, 0, -0.99456286, -0.10408051, -0.20340136, -0.22275588, 0.14068301)
+mesh = SubResource("CylinderMesh_adig8")
+
+[node name="TeacherChairCollision" type="CollisionShape3D" parent="KursiRigidBody" unique_id=1949445499]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0019298196, 0.22234724, 0.094950736)
+shape = SubResource("BoxShape3D_3gngh")
+
+[node name="TeacherChairCollision2" type="CollisionShape3D" parent="KursiRigidBody" unique_id=758310575]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0019298196, 0.47874212, -0.15051132)
+shape = SubResource("BoxShape3D_adig8")
+
+[node name="TeacherChairLegCollision1" type="CollisionShape3D" parent="KursiRigidBody" unique_id=1073996246]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.20367858, 0.025838464, 0.22958466)
+shape = SubResource("BoxShape3D_muqw8")
+
+[node name="TeacherChairLegCollision2" type="CollisionShape3D" parent="KursiRigidBody" unique_id=137736600]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.20381854, 0.025838464, 0.22958466)
+shape = SubResource("BoxShape3D_vofrq")
+
+[node name="TeacherChairLegCollision3" type="CollisionShape3D" parent="KursiRigidBody" unique_id=562854440]
+transform = Transform3D(1, 0, 0, 0, 0.8870108, -0.4617486, 0, 0.4617486, 0.8870108, -0.20246321, 0.010680214, -0.118697345)
+shape = SubResource("BoxShape3D_qt57x")
+
+[node name="TeacherChairLegCollision4" type="CollisionShape3D" parent="KursiRigidBody" unique_id=859147381]
+transform = Transform3D(1, 0, 0, 0, 0.8870108, -0.4617486, 0, 0.4617486, 0.8870108, 0.19406003, 0.010680214, -0.118697345)
+shape = SubResource("BoxShape3D_qt57x")

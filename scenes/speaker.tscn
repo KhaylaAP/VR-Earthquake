@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bp87uggfn85h"]
+
+[ext_resource type="PackedScene" uid="uid://oln6biyxy4oy" path="res://assets/3D Objects/Intercom_Speaker/glb/converted/cc0_intercom_speacker.glb" id="1_6jdiy"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g4v7s"]
+size = Vector3(0.18101454, 0.1865921, 0.10321045)
+
+[node name="Speaker" type="Node3D" unique_id=99739992]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=389675808]
+
+[node name="Sketchfab_Scene" parent="StaticBody3D" unique_id=1189743895 instance=ExtResource("1_6jdiy")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=378263623]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.506111e-05, -0.0010871887, -0.0009460449)
+shape = SubResource("BoxShape3D_g4v7s")

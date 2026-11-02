@@ -1,0 +1,224 @@
+{
+	"assetNamespace": "fab",
+	"listing":
+	{
+		"averageRating": 5,
+		"createdAt": "",
+		"description": "<h4><span class=\"fabkit-prose-color--yellow\">Cafe Wall Pictures</span></h4><p></p><h5><span class=\"fabkit-prose-color--yellow\">Description</span></h5><p></p><p>A set of wall pictures part of a coffee shop's decoration.</p><p></p><h5><span class=\"fabkit-prose-color--yellow\">Model Contents</span></h5><p></p><ul><li><p>x3 Wall Picture</p></li></ul><p></p><h5><span class=\"fabkit-prose-color--yellow\">Model Tier</span></h5><p></p><p>Low-poly</p><p></p><h5><span class=\"fabkit-prose-color--yellow\">Trianlges</span></h5><p></p><p>1,398</p><p></p><h5><span class=\"fabkit-prose-color--yellow\">Vertices</span></h5><p></p><p>1,710</p><p></p><h5><span class=\"fabkit-prose-color--yellow\">Mesh Type</span></h5><p></p><p>Triangulated Mesh</p><p></p><h5><span class=\"fabkit-prose-color--yellow\">Edge Split</span></h5><p></p><p>Smoothing Split</p><p></p><h5><span class=\"fabkit-prose-color--yellow\">Rigging and Animation</span></h5><p></p><ul><li><p>N/A</p></li></ul><p></p><h5><span class=\"fabkit-prose-color--yellow\">UV Mapping</span></h5><p></p><ul><li><p>Non-overlapping</p></li><li><p>Overlapping by Mirroring</p></li></ul><p></p><h5><span class=\"fabkit-prose-color--yellow\">Texture Sets</span></h5><p></p><ul><li><p>Picture 1 (2048 x 2048)</p></li><li><p>Picture 2 (2048 x 2048)</p></li><li><p>Picture 3 (2048 x 2048)</p></li></ul><p></p><h5><span class=\"fabkit-prose-color--yellow\">Texture Workflow</span></h5><p></p><ul><li><p>PBR Metallic Roughness</p></li></ul><p></p><h5><span class=\"fabkit-prose-color--yellow\">Texture Format</span></h5><p></p><ul><li><p>.PNG</p></li></ul><p></p><h5><span class=\"fabkit-prose-color--yellow\">Texture Maps</span></h5><p></p><ol><li><p>Ambient Occlusion</p></li><li><p>Ambient Occlusion (R) + Roughness (G) + Metallic (B)</p></li><li><p>Base Color</p></li><li><p>Base Color (RGB) + Opacity (Alpha)</p></li><li><p>Metallic</p></li><li><p>Normal DX</p></li><li><p>Normal GL</p></li><li><p>Opacity</p></li><li><p>Roughness</p></li></ol>",
+		"isAiForbidden": true,
+		"isAiGenerated": false,
+		"lastUpdatedAt": "",
+		"listingType": "3d-model",
+		"media": "https://media.fab.com/image_previews/gallery_images/284e2ca6-4a3a-4b93-9f8d-8d2c5afd40d2/050617ae-1bea-447e-9e46-966d7dca3a59.jpg",
+		"publishedAt": "2026-04-19T05:26:12.491030Z",
+		"reviewCount": 2,
+		"thumbnail": "https://media.fab.com/image_previews/gallery_images/3be44191-f668-443a-93eb-9b9b90e828db/a886971e-3f07-458d-8bd4-2b63f3d8dc38.jpg",
+		"title": "Cafe Wall Pictures",
+		"uid": "47505d81-a47e-445e-9975-182138aa1aab",
+		"updatedAt": "",
+		"user":
+		{
+			"coverImageUrl": "https://cdn1.epicgames.com/fab/seller/o-sny8cyvqbgbu8d38x7ap35ryb3y43s/cover/b17e7c0c.jpg",
+			"profileImageUrl": "https://cdn1.epicgames.com/fab/seller/o-sny8cyvqbgbu8d38x7ap35ryb3y43s/profile/0207cb52.jpg",
+			"sellerName": "Guy in a Poncho",
+			"uid": "01e6a6aa-1f96-467b-918e-708bd5997ffc"
+		},
+		"tags": [
+			{
+				"name": "Art",
+				"slug": "art",
+				"uid": "05552731-239b-4285-8713-d7051835f39e"
+			},
+			{
+				"name": "Pbr",
+				"slug": "pbr",
+				"uid": "080edd3b-d10a-4f32-ace2-30f5baa480dc"
+			},
+			{
+				"name": "Furniture",
+				"slug": "furniture",
+				"uid": "0f6b3b40-8715-4963-b755-0160e80cf12c"
+			},
+			{
+				"name": "Lowpoly",
+				"slug": "lowpoly",
+				"uid": "451806dc-649e-43b7-9c2e-a54485de14b6"
+			},
+			{
+				"name": "Decoration",
+				"slug": "decoration",
+				"uid": "5824ee7b-342c-4305-a2e8-f9a8a7f41c99"
+			},
+			{
+				"name": "Decor",
+				"slug": "decor",
+				"uid": "5df3e9da-682e-4d94-82ec-759f07c197dd"
+			},
+			{
+				"name": "Gameready",
+				"slug": "gameready",
+				"uid": "6a250196-0821-43cb-b9cd-3975f235b88d"
+			},
+			{
+				"name": "Realistic",
+				"slug": "realistic",
+				"uid": "93b0d3f1-a96c-4d68-9d44-69a313519e32"
+			},
+			{
+				"name": "Picture",
+				"slug": "picture",
+				"uid": "ae8622ae-f464-4b6d-b43b-ad358dc6fcb5"
+			},
+			{
+				"name": "Wall",
+				"slug": "wall",
+				"uid": "b138d7ed-637e-4c63-b1dd-2295e069f06f"
+			},
+			{
+				"name": "Wood",
+				"slug": "wood",
+				"uid": "bcd38165-4b32-484d-bce7-c6cdaf827f77"
+			},
+			{
+				"name": "Prop",
+				"slug": "prop",
+				"uid": "c4f4f70b-31aa-41e7-b857-70631ffdeb3f"
+			},
+			{
+				"name": "High",
+				"slug": "high",
+				"uid": "ce17ccb9-d304-403f-87fa-1a1a1fc7f162"
+			},
+			{
+				"name": "Frame",
+				"slug": "frame",
+				"uid": "e5fc5baa-283f-4092-9e8f-34bc253afe0c"
+			}
+		],
+		"category":
+		{
+			"name": "Art & Statues",
+			"path": "objects-decor/art-statues",
+			"slug": "objects-decor--art-statues",
+			"uid": "b2043d1b-0579-419a-a99e-5fbffc8a21c5"
+		},
+		"assetFormats": [
+			{
+				"assetFormatType":
+				{
+					"name": "FBX",
+					"groupName": "3D Exchange Formats",
+					"code": "fbx",
+					"icon": "cube",
+					"extensions": [
+						"fbx"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "Converted Files",
+					"groupName": "",
+					"code": "converted-files",
+					"icon": "cube",
+					"extensions": [
+						"gltf",
+						"glb",
+						"usdz"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "Blender",
+					"groupName": "3D DCC Formats",
+					"code": "blender",
+					"icon": "blender",
+					"extensions": [
+						"blend"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "OBJ",
+					"groupName": "3D Exchange Formats",
+					"code": "obj",
+					"icon": "cube",
+					"extensions": [
+						"obj"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "Additional files",
+					"groupName": "Other Formats",
+					"code": "additional-files",
+					"icon": "file",
+					"extensions": [
+						"zip"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "GLB",
+					"groupName": "3D Exchange Formats",
+					"code": "glb",
+					"icon": "cube",
+					"extensions": [
+						"glb"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "GLTF",
+					"groupName": "3D Exchange Formats",
+					"code": "gltf",
+					"icon": "cube",
+					"extensions": [
+						"gltf"
+					]
+				}
+			},
+			{
+				"assetFormatType":
+				{
+					"name": "USDZ",
+					"groupName": "3D Exchange Formats",
+					"code": "usdz",
+					"icon": "cube",
+					"extensions": [
+						"usdz"
+					]
+				}
+			}
+		],
+		"_PluginMetas":
+		{
+			"apiDataVersion": "0.0.1",
+			"entitlementUid": "5113847b-32ea-471d-849c-d7ddb5f04fa1",
+			"cacheSize": 0,
+			"downloaded": []
+		}
+	},
+	"target": "diskExport",
+	"quality": "",
+	"format": "glb",
+	"fileId": "966d61e5-725d-4ad2-89cf-a56eae9997a6",
+	"platformIncluded": "",
+	"distributionPointBaseUrls": [],
+	"distributionMethod": "",
+	"entitlementUid": "5113847b-32ea-471d-849c-d7ddb5f04fa1",
+	"invertedNormal": false,
+	"isConverted": true,
+	"isQuixel": false
+}

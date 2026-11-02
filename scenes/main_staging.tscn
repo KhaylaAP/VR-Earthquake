@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://c17ou847i44c1"]
+
+[ext_resource type="PackedScene" uid="uid://bnqnnnet4dw12" path="res://addons/godot-xr-tools/staging/staging.tscn" id="1_k1qkh"]
+[ext_resource type="Texture2D" uid="uid://clb5l834scru" path="res://splash.png" id="2_k1qkh"]
+
+[sub_resource type="Curve" id="21"]
+_limits = [0.0, 3.14, 0.0, 1.0]
+_data = [Vector2(0.00207039, 0), 0.0, 1.00884, 0, 0, Vector2(1, 3.14), 0.313348, 0.0, 0, 0]
+point_count = 2
+
+[node name="MainStaging" unique_id=1535577845 instance=ExtResource("1_k1qkh")]
+main_scene = "uid://hhpimkd33qvt"
+
+[node name="LoadingScreen" parent="." index="2"]
+follow_speed = SubResource("21")
+splash_screen = ExtResource("2_k1qkh")

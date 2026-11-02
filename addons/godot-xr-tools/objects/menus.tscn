@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cofy4pxtxdxwa"]
+
+[ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="1_ksksx"]
+[ext_resource type="PackedScene" uid="uid://blceh5byitm2" path="res://scenes/earthquake_options.tscn" id="2_6sj2a"]
+
+[node name="Menus" type="Node3D" unique_id=1031591364]
+
+[node name="AdminMenu" type="Node3D" parent="." unique_id=1430592639]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0)
+
+[node name="AdminMenuViewport" parent="AdminMenu" unique_id=2003895130 instance=ExtResource("1_ksksx")]
+transform = Transform3D(0.002, 0, 0, 0, 0.002, 0, 0, 0, 0.002, 0, 0, 0)
+screen_size = Vector2(1280, 720)
+scene = ExtResource("2_6sj2a")
+viewport_size = Vector2(1280, 720)
+transparent = 1
+unshaded = true
+scene_properties_keys = PackedStringArray()
