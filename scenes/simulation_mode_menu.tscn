@@ -1,0 +1,107 @@
+[gd_scene format=3 uid="uid://qvk8hf8ckkqm"]
+
+[ext_resource type="Script" uid="uid://bgpidqne70wm3" path="res://scenes/simulation_mode_menu.gd" id="1_b14rn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1obbm"]
+bg_color = Color(0, 0.12941177, 0.16862746, 0.6862745)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jk2e0"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ug0jn"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mi4lm"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="Simulation Mode Menu" type="Control" unique_id=1798735934]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_b14rn")
+
+[node name="Panel" type="Panel" parent="." unique_id=316775917]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_1obbm")
+
+[node name="Label" type="Label" parent="Panel" unique_id=383618338]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -221.0
+offset_top = -259.0
+offset_right = 221.0
+offset_bottom = -176.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 60
+text = "Choose a Mode"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel" unique_id=289386917]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 75
+
+[node name="DataButton" type="Button" parent="Panel/HBoxContainer" unique_id=136563323]
+custom_minimum_size = Vector2(250, 230)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.29411766, 0.29411766, 0.29411766, 1)
+theme_override_colors/font_hover_color = Color(0.7254902, 0.7254902, 0.7254902, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_jk2e0")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ug0jn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mi4lm")
+text = "BMKG Data"
+
+[node name="IntensityButton" type="Button" parent="Panel/HBoxContainer" unique_id=1361769332]
+custom_minimum_size = Vector2(250, 230)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.29411766, 0.29411766, 0.29411766, 1)
+theme_override_colors/font_hover_color = Color(0.7254902, 0.7254902, 0.7254902, 1)
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_jk2e0")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ug0jn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mi4lm")
+text = "Intensity"
+
+[connection signal="pressed" from="Panel/HBoxContainer/DataButton" to="." method="_on_data_button_pressed"]
+[connection signal="pressed" from="Panel/HBoxContainer/IntensityButton" to="." method="_on_intensity_button_pressed"]

@@ -40,7 +40,14 @@ func _process(delta: float) -> void:
 			hide_warning()
 
 # This function will be called by your earthquake controller
-func trigger_warning(phone_texture_path: String, distance_km: float, datetime_label: String, countdown_seconds: float) -> void:
+func trigger_warning(phone_or_intensity, distance_or_countdown = 0.0, datetime_label: String = "", countdown_seconds: float = 0.0) -> void:
+	if typeof(phone_or_intensity) == TYPE_FLOAT or typeof(phone_or_intensity) == TYPE_INT:
+		trigger_warning_intensity(float(phone_or_intensity), float(distance_or_countdown))
+		return
+	
+	var phone_texture_path: String = str(phone_or_intensity)
+	var distance_km: float = float(distance_or_countdown)
+
 	if ResourceLoader.exists(phone_texture_path):
 		var tex := load(phone_texture_path)
 		display_sprite.texture = tex
@@ -52,6 +59,25 @@ func trigger_warning(phone_texture_path: String, distance_km: float, datetime_la
 	
 	jarak_label.text = "%.0f km" % distance_km
 	tangal_jam_label.text = datetime_label
+	
+	time_left = countdown_seconds
+	is_counting_down = true
+	
+	warning_audio.play()
+	
+	# Fade IN smoothly
+	var tween = create_tween()
+	tween.tween_property(self, "modulate:a", 1.0, 0.5)
+	tween.parallel().tween_property(self, "outline_modulate:a", 1.0, 0.5)
+	tween.parallel().tween_property(phone_sprite, "modulate:a", 1.0, 0.5)
+	tween.parallel().tween_property(display_sprite, "modulate:a", 1.0, 0.5)
+	tween.parallel().tween_property(jarak_label, "modulate:a", 1.0, 0.5)
+	tween.parallel().tween_property(tangal_jam_label, "modulate:a", 1.0, 0.5)
+
+func trigger_warning_intensity(custom_intensity: float, countdown_seconds: float) -> void:
+	current_intensity = custom_intensity
+	jarak_label.text = "Intensitas: %.1f" % custom_intensity
+	tangal_jam_label.text = "Peringatan Dini Gempa"
 	
 	time_left = countdown_seconds
 	is_counting_down = true

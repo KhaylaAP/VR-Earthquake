@@ -88,10 +88,17 @@ func _on_confirm_button_pressed() -> void:
 		push_error("WARNING: Could not find the ClassroomStructure node!")
 		return
 	
-	classroom_structure.begin_simulation(selected_index)
+	if classroom_structure.has_method("begin_simulation_data"):
+		classroom_structure.begin_simulation_data(selected_index)
+	else:
+		classroom_structure.begin_simulation(selected_index)
 	
-	if admin_menu_viewport:
-		admin_menu_viewport.visible = false
-		admin_menu_viewport.process_mode = Node.PROCESS_MODE_DISABLED
+	var target_viewport = admin_menu_viewport
+	if target_viewport == null:
+		target_viewport = get_tree().root.find_child("AdminMenuViewport", true, false)
+	
+	if target_viewport:
+		target_viewport.visible = false
+		target_viewport.process_mode = Node.PROCESS_MODE_DISABLED
 	else:
 		push_error("WARNING: admin_menu_viewport belum di-drag ke Inspector!")

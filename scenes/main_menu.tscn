@@ -16,6 +16,20 @@ corner_radius_top_right = 20
 corner_radius_bottom_right = 20
 corner_radius_bottom_left = 20
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l6cm7"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ekxnf"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
 [node name="Main Menu" type="Control" unique_id=1898129587]
 layout_mode = 3
 anchors_preset = 15
@@ -73,6 +87,8 @@ theme_override_colors/font_pressed_color = Color(0.29411766, 0.29411766, 0.29411
 theme_override_colors/font_hover_color = Color(0.7254902, 0.7254902, 0.7254902, 1)
 theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxFlat_fqvwe")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_l6cm7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ekxnf")
 text = "Simulation"
 
 [node name="TrainingButton" type="Button" parent="Panel/HBoxContainer" unique_id=1985136401]
@@ -83,6 +99,8 @@ theme_override_colors/font_pressed_color = Color(0.29411766, 0.29411766, 0.29411
 theme_override_colors/font_hover_color = Color(0.7254902, 0.7254902, 0.7254902, 1)
 theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxFlat_fqvwe")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_l6cm7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ekxnf")
 text = "Training"
 
 [node name="TestingButton" type="Button" parent="Panel/HBoxContainer" unique_id=240276666]
@@ -93,4 +111,10 @@ theme_override_colors/font_pressed_color = Color(0.29411766, 0.29411766, 0.29411
 theme_override_colors/font_hover_color = Color(0.7254902, 0.7254902, 0.7254902, 1)
 theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxFlat_fqvwe")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_l6cm7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ekxnf")
 text = "Testing"
+
+[connection signal="pressed" from="Panel/HBoxContainer/SimulationButton" to="." method="_on_simulation_button_pressed"]
+[connection signal="pressed" from="Panel/HBoxContainer/TrainingButton" to="." method="_on_training_button_pressed"]
+[connection signal="pressed" from="Panel/HBoxContainer/TestingButton" to="." method="_on_testing_button_pressed"]

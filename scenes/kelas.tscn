@@ -23,6 +23,8 @@
 [ext_resource type="PackedScene" uid="uid://diyu06cw06syv" path="res://addons/godot-xr-tools/player/player_body.tscn" id="21_phdfy"]
 [ext_resource type="PackedScene" uid="uid://dogmw2hxpgr27" path="res://scenes/kelas_model.tscn" id="22_dfdae"]
 [ext_resource type="PackedScene" uid="uid://cofy4pxtxdxwa" path="res://addons/godot-xr-tools/objects/menus.tscn" id="23_4kbsq"]
+[ext_resource type="PackedScene" uid="uid://qvk8hf8ckkqm" path="res://scenes/simulation_mode_menu.tscn" id="24_84xfx"]
+[ext_resource type="PackedScene" uid="uid://duqf63fn7qu5d" path="res://scenes/menu_admin.tscn" id="25_tc4x1"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_kkrti"]
 panorama = ExtResource("2_4kbsq")
@@ -60,21 +62,57 @@ radius = 0.25657472
 friction = 0.59
 rough = true
 
-[sub_resource type="QuadMesh" id="QuadMesh_4kbsq"]
+[sub_resource type="QuadMesh" id="QuadMesh_xwklj"]
 resource_local_to_scene = true
 size = Vector2(1280, 720)
 
-[sub_resource type="ViewportTexture" id="ViewportTexture_84xfx"]
-viewport_path = NodePath("Menus/AdminMenu/AdminMenuViewport/Viewport")
+[sub_resource type="ViewportTexture" id="ViewportTexture_oekib"]
+viewport_path = NodePath("Menus/ModeMenu/ModeMenuViewport/Viewport")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tc4x1"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fm5jx"]
 transparency = 1
 cull_mode = 2
 shading_mode = 0
-albedo_texture = SubResource("ViewportTexture_84xfx")
+albedo_texture = SubResource("ViewportTexture_oekib")
 texture_filter = 1
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_o0ehj"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_uknif"]
+resource_local_to_scene = true
+size = Vector3(1280, 720, 0.02)
+
+[sub_resource type="QuadMesh" id="QuadMesh_84xfx"]
+resource_local_to_scene = true
+size = Vector2(1280, 720)
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_tc4x1"]
+viewport_path = NodePath("Menus/AdminMenu/AdminMenuViewport/Viewport")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o0ehj"]
+transparency = 1
+cull_mode = 2
+shading_mode = 0
+albedo_texture = SubResource("ViewportTexture_tc4x1")
+texture_filter = 1
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kv2x1"]
+resource_local_to_scene = true
+size = Vector3(1280, 720, 0.02)
+
+[sub_resource type="QuadMesh" id="QuadMesh_tc4x1"]
+resource_local_to_scene = true
+size = Vector2(1280, 720)
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_o0ehj"]
+viewport_path = NodePath("Menus/IntensityMenu/IntensityMenuViewport/Viewport")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kv2x1"]
+transparency = 1
+cull_mode = 2
+shading_mode = 0
+albedo_texture = SubResource("ViewportTexture_o0ehj")
+texture_filter = 1
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xwklj"]
 resource_local_to_scene = true
 size = Vector3(1280, 720, 0.02)
 
@@ -241,7 +279,37 @@ max_intensity_multiplier = 9.0
 [node name="Menus" parent="." unique_id=1031591364 instance=ExtResource("23_4kbsq")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.787, -3.289)
 
+[node name="ModeMenu" type="Node3D" parent="Menus" unique_id=1319870990]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0)
+
+[node name="ModeMenuViewport" parent="Menus/ModeMenu" unique_id=1028743587 node_paths=PackedStringArray("mode_menu_viewport", "options_menu_viewport", "intensity_menu_viewport") instance=ExtResource("7_xwklj")]
+transform = Transform3D(0.002, 0, 0, 0, 0.002, 0, 0, 0, 0.002, 0, 0, 0)
+screen_size = Vector2(1280, 720)
+scene = ExtResource("24_84xfx")
+viewport_size = Vector2(1280, 720)
+transparent = 1
+unshaded = true
+scene_properties_keys = PackedStringArray("simulation_mode_menu.gd", "mode_menu_viewport", "options_menu_viewport", "intensity_menu_viewport")
+mode_menu_viewport = NodePath(".")
+options_menu_viewport = NodePath("../../AdminMenu/AdminMenuViewport")
+intensity_menu_viewport = NodePath("../../IntensityMenu/IntensityMenuViewport")
+
+[node name="Viewport" parent="Menus/ModeMenu/ModeMenuViewport" index="0"]
+size = Vector2i(1280, 720)
+
+[node name="Screen" parent="Menus/ModeMenu/ModeMenuViewport" index="1"]
+mesh = SubResource("QuadMesh_xwklj")
+surface_material_override/0 = SubResource("StandardMaterial3D_fm5jx")
+
+[node name="StaticBody3D" parent="Menus/ModeMenu/ModeMenuViewport" index="2"]
+screen_size = Vector2(1280, 720)
+viewport_size = Vector2(1280, 720)
+
+[node name="CollisionShape3D" parent="Menus/ModeMenu/ModeMenuViewport/StaticBody3D" index="0"]
+shape = SubResource("BoxShape3D_uknif")
+
 [node name="AdminMenuViewport" parent="Menus/AdminMenu" parent_id_path=PackedInt32Array(1031591364, 1430592639) index="0" unique_id=2003895130 node_paths=PackedStringArray("admin_menu_viewport")]
+visible = false
 scene_properties_keys = PackedStringArray("earthquake_options.gd", "admin_menu_viewport")
 admin_menu_viewport = NodePath("..")
 
@@ -249,15 +317,43 @@ admin_menu_viewport = NodePath("..")
 size = Vector2i(1280, 720)
 
 [node name="Screen" parent="Menus/AdminMenu/AdminMenuViewport" index="1"]
-mesh = SubResource("QuadMesh_4kbsq")
-surface_material_override/0 = SubResource("StandardMaterial3D_tc4x1")
+mesh = SubResource("QuadMesh_84xfx")
+surface_material_override/0 = SubResource("StandardMaterial3D_o0ehj")
 
 [node name="StaticBody3D" parent="Menus/AdminMenu/AdminMenuViewport" index="2"]
 screen_size = Vector2(1280, 720)
 viewport_size = Vector2(1280, 720)
 
 [node name="CollisionShape3D" parent="Menus/AdminMenu/AdminMenuViewport/StaticBody3D" index="0"]
-shape = SubResource("BoxShape3D_o0ehj")
+shape = SubResource("BoxShape3D_kv2x1")
+
+[node name="IntensityMenu" type="Node3D" parent="Menus" unique_id=570696686]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, 0)
+
+[node name="IntensityMenuViewport" parent="Menus/IntensityMenu" unique_id=1649885938 node_paths=PackedStringArray("intensity_menu_viewport") instance=ExtResource("7_xwklj")]
+transform = Transform3D(0.002, 0, 0, 0, 0.002, 0, 0, 0, 0.002, 0, 0, 0)
+visible = false
+screen_size = Vector2(1280, 720)
+scene = ExtResource("25_tc4x1")
+viewport_size = Vector2(1280, 720)
+transparent = 1
+unshaded = true
+scene_properties_keys = PackedStringArray("menu_admin.gd", "intensity_menu_viewport")
+intensity_menu_viewport = NodePath("..")
+
+[node name="Viewport" parent="Menus/IntensityMenu/IntensityMenuViewport" index="0"]
+size = Vector2i(1280, 720)
+
+[node name="Screen" parent="Menus/IntensityMenu/IntensityMenuViewport" index="1"]
+mesh = SubResource("QuadMesh_tc4x1")
+surface_material_override/0 = SubResource("StandardMaterial3D_kv2x1")
+
+[node name="StaticBody3D" parent="Menus/IntensityMenu/IntensityMenuViewport" index="2"]
+screen_size = Vector2(1280, 720)
+viewport_size = Vector2(1280, 720)
+
+[node name="CollisionShape3D" parent="Menus/IntensityMenu/IntensityMenuViewport/StaticBody3D" index="0"]
+shape = SubResource("BoxShape3D_xwklj")
 
 [connection signal="body_entered" from="XROrigin3D/XRCamera3D/PlayerHead" to="XROrigin3D" method="_on_player_head_body_entered"]
 [connection signal="button_pressed" from="XROrigin3D/LeftHand" to="XROrigin3D" method="_on_left_hand_button_pressed"]
@@ -266,4 +362,6 @@ shape = SubResource("BoxShape3D_o0ehj")
 [editable path="KelasModel"]
 [editable path="KelasModel/WallObjects/Clock"]
 [editable path="Menus"]
+[editable path="Menus/ModeMenu/ModeMenuViewport"]
 [editable path="Menus/AdminMenu/AdminMenuViewport"]
+[editable path="Menus/IntensityMenu/IntensityMenuViewport"]

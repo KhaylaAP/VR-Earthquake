@@ -7,24 +7,32 @@ extends Control
 # Use the brute-force search we used earlier so it never crashes!
 @onready var classroom_structure = get_tree().root.find_child("ClassroomStructure", true, false)
 
+@export var intensity_menu_viewport: Node
+
 func _on_confirm_button_pressed() -> void:
 	if classroom_structure != null:
 		# 1. Get the current number from the slider
-		var chosen_intensity = intensity_slider.value
+		var chosen_intensity: float = intensity_slider.value
 		
 		# 2. Tell the earthquake script to start, using our new number!
-		classroom_structure.begin_simulation(chosen_intensity)
+		if classroom_structure.has_method("begin_simulation_intensity"):
+			classroom_structure.begin_simulation_intensity(chosen_intensity)
+		else:
+			classroom_structure.begin_simulation(chosen_intensity)
 		
 		# 3. Hide this entire 3D menu so it's not floating in the air during the quake
-		var viewport_3d_node = get_tree().root.find_child("AdminMenuViewport", true, false)
-		if viewport_3d_node:
-			viewport_3d_node.visible = false
+		var target_viewport = intensity_menu_viewport
+		if target_viewport == null:
+			target_viewport = get_tree().root.find_child("IntensityMenuViewport", true, false)
+		if target_viewport == null:
+			target_viewport = get_tree().root.find_child("AdminMenuViewport", true, false)
+		
+		if target_viewport:
+			target_viewport.visible = false
 			# Turn off its physics so VR hands don't bump into the invisible menu
-			viewport_3d_node.process_mode = Node.PROCESS_MODE_DISABLED 
-			
+			target_viewport.process_mode = Node.PROCESS_MODE_DISABLED 
 	else:
 		push_error("WARNING: Could not find the ClassroomStructure node!")
-
 
 func _on_h_slider_value_changed(value: float) -> void:
 	slider_value.text = "%.1f" % value

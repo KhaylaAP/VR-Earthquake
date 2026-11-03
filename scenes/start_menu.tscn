@@ -1,0 +1,250 @@
+[gd_scene format=3 uid="uid://b6ceypfrpovfg"]
+
+[ext_resource type="Script" uid="uid://177gygw2xqqu" path="res://addons/godot-xr-tools/staging/scene_base.gd" id="0_base"]
+[ext_resource type="Script" uid="uid://duoeqxs5aexl0" path="res://scenes/player.gd" id="1_fbjtm"]
+[ext_resource type="PackedScene" uid="uid://btknduttnmoxf" path="res://addons/godot-xr-tools/misc/vr_common_shader_cache.tscn" id="2_hntex"]
+[ext_resource type="Script" uid="uid://bon1bmgydd0ts" path="res://scenes/fade.gd" id="3_mroui"]
+[ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="4_0lulb"]
+[ext_resource type="PackedScene" uid="uid://upb2tn70dfoj" path="res://scenes/menu_player.tscn" id="5_2o8dr"]
+[ext_resource type="Script" uid="uid://dge1kye5h7ity" path="res://scenes/results.gd" id="6_3rgym"]
+[ext_resource type="PackedScene" uid="uid://42xbeno6pt3y" path="res://addons/godot-xr-tools/desktop-support/function_desktop_pointer.tscn" id="7_u1ism"]
+[ext_resource type="PackedScene" uid="uid://njx823gyk04n" path="res://addons/godot-xr-tools/hands/scenes/highpoly/left_hand.tscn" id="8_jjmg0"]
+[ext_resource type="PackedScene" uid="uid://bl2nuu3qhlb5k" path="res://addons/godot-xr-tools/functions/movement_direct.tscn" id="9_1d3uo"]
+[ext_resource type="PackedScene" uid="uid://b4ysuy43poobf" path="res://addons/godot-xr-tools/functions/function_pickup.tscn" id="10_hp5u2"]
+[ext_resource type="PackedScene" uid="uid://cqhw276realc" path="res://addons/godot-xr-tools/functions/function_pointer.tscn" id="11_fy578"]
+[ext_resource type="PackedScene" uid="uid://raeeicvvindd" path="res://addons/godot-xr-tools/hands/scenes/highpoly/right_hand.tscn" id="12_ccphb"]
+[ext_resource type="PackedScene" uid="uid://b6bk2pj8vbj28" path="res://addons/godot-xr-tools/functions/movement_turn.tscn" id="13_q1sms"]
+[ext_resource type="PackedScene" uid="uid://clt88d5d1dje4" path="res://addons/godot-xr-tools/functions/movement_crouch.tscn" id="14_q77r4"]
+[ext_resource type="PackedScene" uid="uid://diyu06cw06syv" path="res://addons/godot-xr-tools/player/player_body.tscn" id="15_ul6wr"]
+[ext_resource type="Texture2D" uid="uid://cfgynarskmtt7" path="res://assets/textures/Tiles107_1K-JPG/Tiles107_1K-JPG_Color.jpg" id="16_4ra0d"]
+[ext_resource type="Texture2D" uid="uid://ts0vblbby4pd" path="res://assets/textures/Tiles107_1K-JPG/Tiles107_1K-JPG_AmbientOcclusion.jpg" id="17_np3gv"]
+[ext_resource type="Texture2D" uid="uid://cgm1o4y8mpf8k" path="res://assets/textures/Tiles107_1K-JPG/Tiles107_1K-JPG_NormalGL.jpg" id="18_n4mi7"]
+[ext_resource type="Texture2D" uid="uid://cag8b55esjqot" path="res://assets/textures/Tiles107_1K-JPG/Tiles107_1K-JPG_Roughness.jpg" id="19_mohu8"]
+[ext_resource type="PackedScene" uid="uid://cofy4pxtxdxwa" path="res://addons/godot-xr-tools/objects/menus.tscn" id="20_mroui"]
+[ext_resource type="PackedScene" uid="uid://ctv3rak2x65nf" path="res://scenes/main_menu.tscn" id="21_0lulb"]
+
+[sub_resource type="Environment" id="Environment_l6cm7"]
+background_mode = 1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mhnvy"]
+transparency = 1
+no_depth_test = true
+shading_mode = 0
+albedo_color = Color(0, 0, 0, 0)
+billboard_mode = 1
+
+[sub_resource type="QuadMesh" id="QuadMesh_ac3w4"]
+material = SubResource("StandardMaterial3D_mhnvy")
+size = Vector2(2, 2)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_aejak"]
+radius = 0.25657472
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4kte0"]
+albedo_texture = ExtResource("16_4ra0d")
+roughness_texture = ExtResource("19_mohu8")
+normal_enabled = true
+normal_texture = ExtResource("18_n4mi7")
+ao_enabled = true
+ao_texture = ExtResource("17_np3gv")
+uv1_scale = Vector3(7, 7, 7)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ki3ti"]
+material = SubResource("StandardMaterial3D_4kte0")
+size = Vector3(25, 1, 25)
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_3oy7u"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_2o8dr"]
+resource_local_to_scene = true
+size = Vector2(1280, 720)
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_3rgym"]
+viewport_path = NodePath("Menus/AdminMenu/AdminMenuViewport/Viewport")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u1ism"]
+transparency = 1
+cull_mode = 2
+shading_mode = 0
+albedo_texture = SubResource("ViewportTexture_3rgym")
+texture_filter = 1
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jjmg0"]
+resource_local_to_scene = true
+size = Vector3(1280, 720, 0.02)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sktun"]
+size = Vector3(0.5, 5, 26)
+
+[node name="Start Menu" type="Node3D" unique_id=537015949]
+script = ExtResource("0_base")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=146518308]
+transform = Transform3D(-0.08715577, 0.86272997, -0.4980973, 0, 0.49999997, 0.86602545, 0.9961947, 0.07547911, -0.04357788, -9.793687, 9.181911, 1.9931707)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=707552013]
+environment = SubResource("Environment_l6cm7")
+
+[node name="XROrigin3D" type="XROrigin3D" parent="." unique_id=791637797]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, -4.9128513)
+current = true
+script = ExtResource("1_fbjtm")
+
+[node name="XRCamera3D" type="XRCamera3D" parent="XROrigin3D" unique_id=360051438]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8, 0)
+far = 300.0
+
+[node name="VRCommonShaderCache" parent="XROrigin3D/XRCamera3D" unique_id=611258494 instance=ExtResource("2_hntex")]
+
+[node name="Fade" type="MeshInstance3D" parent="XROrigin3D/XRCamera3D" unique_id=212717165]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.1)
+mesh = SubResource("QuadMesh_ac3w4")
+script = ExtResource("3_mroui")
+
+[node name="PlayerMenu" parent="XROrigin3D/XRCamera3D" unique_id=1314664124 instance=ExtResource("4_0lulb")]
+process_mode = 4
+transform = Transform3D(0.001, 0, 0, 0, 0.001, 0, 0, 0, 0.001, 0, 0, -1.1271791)
+visible = false
+screen_size = Vector2(1280, 720)
+scene = ExtResource("5_2o8dr")
+viewport_size = Vector2(1280, 720)
+transparent = 1
+unshaded = true
+scene_properties_keys = PackedStringArray("menu_player.gd")
+
+[node name="PlayerHead" type="Area3D" parent="XROrigin3D/XRCamera3D" unique_id=1978481738]
+collision_mask = 7
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="XROrigin3D/XRCamera3D/PlayerHead" unique_id=2133804370]
+shape = SubResource("SphereShape3D_aejak")
+
+[node name="Results" type="Label3D" parent="XROrigin3D/XRCamera3D" unique_id=1733027738]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, -1)
+visible = false
+pixel_size = 0.0013
+billboard = 1
+no_depth_test = true
+text = "Kepala Anda terkena oleh:
+Jumlah Benturan:
+"
+font_size = 30
+autowrap_mode = 2
+script = ExtResource("6_3rgym")
+
+[node name="FunctionDesktopPointer" parent="XROrigin3D/XRCamera3D" unique_id=1702055519 instance=ExtResource("7_u1ism")]
+
+[node name="LeftHand" type="XRController3D" parent="XROrigin3D" unique_id=518623438]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 1, -0.5)
+tracker = &"left_hand"
+pose = &"grip"
+
+[node name="LeftHand" parent="XROrigin3D/LeftHand" unique_id=1872663462 instance=ExtResource("8_jjmg0")]
+
+[node name="MovementDirect" parent="XROrigin3D/LeftHand" unique_id=2081588890 instance=ExtResource("9_1d3uo")]
+strafe = true
+
+[node name="FunctionPickup" parent="XROrigin3D/LeftHand" unique_id=2095918648 instance=ExtResource("10_hp5u2")]
+transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0, 0, 0)
+
+[node name="FunctionPointer" parent="XROrigin3D/LeftHand" unique_id=515252412 instance=ExtResource("11_fy578")]
+transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0.02, -0.03535534, -0.10606602)
+show_laser = 2
+laser_length = 1
+collision_mask = 5243392
+
+[node name="RightHand" type="XRController3D" parent="XROrigin3D" unique_id=55250836]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 1, -0.5)
+tracker = &"right_hand"
+pose = &"grip"
+
+[node name="RightHand" parent="XROrigin3D/RightHand" unique_id=443308856 instance=ExtResource("12_ccphb")]
+
+[node name="MovementTurn" parent="XROrigin3D/RightHand" unique_id=2179979 instance=ExtResource("13_q1sms")]
+turn_mode = 1
+
+[node name="MovementCrouch" parent="XROrigin3D/RightHand" unique_id=972564157 instance=ExtResource("14_q77r4")]
+crouch_height = 0.5
+crouch_button_action = "ax_button"
+crouch_type = 1
+
+[node name="FunctionPickup" parent="XROrigin3D/RightHand" unique_id=348320302 instance=ExtResource("10_hp5u2")]
+transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0, 0, 0)
+
+[node name="FunctionPointer" parent="XROrigin3D/RightHand" unique_id=2021417115 instance=ExtResource("11_fy578")]
+transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, -0.02, -0.03535534, -0.10606602)
+show_laser = 2
+laser_length = 1
+collision_mask = 5243392
+
+[node name="PlayerBody" parent="XROrigin3D" unique_id=519911696 instance=ExtResource("15_ul6wr")]
+slide_on_ceiling = false
+head_behavior_mode = 0
+
+[node name="Lantai" type="MeshInstance3D" parent="." unique_id=974767115]
+transform = Transform3D(0.99999976, 0, 0, 0, 0.99999976, 0, 0, 0, 0.99999976, 0, -0.732, 0)
+mesh = SubResource("BoxMesh_ki3ti")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Lantai" unique_id=870757770]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0903066, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Lantai/StaticBody3D" unique_id=38948987]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.48957765, 0)
+shape = SubResource("WorldBoundaryShape3D_3oy7u")
+
+[node name="Menus" parent="." unique_id=1031591364 instance=ExtResource("20_mroui")]
+transform = Transform3D(0.99999976, 0, 0, 0, 0.99999976, 0, 0, 0, 0.99999976, 0.020480968, 1.495992, -2.816002)
+
+[node name="AdminMenuViewport" parent="Menus/AdminMenu" parent_id_path=PackedInt32Array(1031591364, 1430592639) index="0" unique_id=2003895130]
+scene = ExtResource("21_0lulb")
+scene_properties_keys = PackedStringArray("main_menu.gd", "simulation_scene", "training_scene", "testing_scene")
+simulation_scene = "res://scenes/kelas.tscn"
+training_scene = ""
+testing_scene = ""
+
+[node name="Viewport" parent="Menus/AdminMenu/AdminMenuViewport" index="0"]
+size = Vector2i(1280, 720)
+
+[node name="Screen" parent="Menus/AdminMenu/AdminMenuViewport" index="1"]
+mesh = SubResource("QuadMesh_2o8dr")
+surface_material_override/0 = SubResource("StandardMaterial3D_u1ism")
+
+[node name="StaticBody3D" parent="Menus/AdminMenu/AdminMenuViewport" index="2"]
+screen_size = Vector2(1280, 720)
+viewport_size = Vector2(1280, 720)
+
+[node name="CollisionShape3D" parent="Menus/AdminMenu/AdminMenuViewport/StaticBody3D" index="0"]
+shape = SubResource("BoxShape3D_jjmg0")
+
+[node name="Walls" type="Node3D" parent="." unique_id=530952542]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.5, 2, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Walls" unique_id=221203063]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/StaticBody3D" unique_id=897603412]
+shape = SubResource("BoxShape3D_sktun")
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="Walls" unique_id=1969224446]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/StaticBody3D2" unique_id=715102630]
+shape = SubResource("BoxShape3D_sktun")
+
+[node name="StaticBody3D3" type="StaticBody3D" parent="Walls" unique_id=414298694]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -12.5, 0, -12.5)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/StaticBody3D3" unique_id=1271012770]
+shape = SubResource("BoxShape3D_sktun")
+
+[node name="StaticBody3D4" type="StaticBody3D" parent="Walls" unique_id=1344566016]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -12.5, 0, 12.5)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Walls/StaticBody3D4" unique_id=237094175]
+shape = SubResource("BoxShape3D_sktun")
+
+[connection signal="body_entered" from="XROrigin3D/XRCamera3D/PlayerHead" to="XROrigin3D" method="_on_player_head_body_entered"]
+[connection signal="button_pressed" from="XROrigin3D/LeftHand" to="XROrigin3D" method="_on_left_hand_button_pressed"]
+[connection signal="button_pressed" from="XROrigin3D/LeftHand" to="XROrigin3D/XRCamera3D/Results" method="_on_left_hand_button_pressed"]
+
+[editable path="Menus"]
+[editable path="Menus/AdminMenu/AdminMenuViewport"]
